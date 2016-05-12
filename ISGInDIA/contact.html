@@ -1,0 +1,115 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Contact us | ISG India</title>
+	<meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+	<script type='text/javascript'>
+         		function init_map()
+         		            {
+         		                var myOptions = {zoom:15,center:new google.maps.LatLng(28.4554726,77.02190189999999),mapTypeId: google.maps.MapTypeId.ROADMAP};
+      	        	                  map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+         		    	        	  marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(28.4554726,77.02190189999999)});
+         		    	        	  infowindow = new google.maps.InfoWindow({content:'<strong>isg India</strong><br>SCO-29, First Floor, Sector- 10A Market Gurgaon-122001<br>'});
+         		    	        	  google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+
+	<style>
+    	body
+	 		{
+	    		
+	 		}
+
+	 	.img-center
+	 		{
+	 			margin: auto;
+	 		}	
+	 	
+	 	.btn
+	 		{
+	 			background-color: black;
+	 			margin: auto;
+	 		}	
+	 	.nav-color
+	 		{
+	 			color: gray;
+	 		}	
+	 	.border
+	 	    {
+	 	    	border-radius: 10px;
+	 	    }	
+	 	.para1
+	 		{
+	 			color: purple;
+	 		}
+	 	#gmap_canvas 
+         		     img
+         		     {
+         		    	  max-width:none!important;
+             	      	  border-width: 5px;
+         		     }
+
+	</style>
+	<img class="img-responsive img-center" src="Images/isglogo.png" width="400px" height="150px">&nbsp;&nbsp;
+</head>
+<body>
+
+	
+	  
+	  <div class="container">
+          <div class="navbar navbar-inverse navbar-top">
+             
+                  <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                   </a>
+                   <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav nav-color">
+                                    <li><a href="homepage.html"> Home</a></li>
+                                    <li><a href="services.html">Servies</a></li>
+                                    <li><a href="projects.html">Projects</a></li>
+                                    <li><a href="about.html">About isg</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                    </div>
+           </div>
+       </div>
+
+
+       <div class="container">
+       <div class="row">
+         <div class="jumbotron col-md-6" style="height: 500px">
+            <div align="center">
+               <h2 class="para1">REGISTERED OFFICE</h2>
+     	        Interior Solutions Group India <br>
+				SCO-29, First Floor, Sector- 10A Market <br>
+				Gurgaon-122001 (Haryana) <br>
+				Web:- www.isgindia.co.in <br>
+				Tel:- 0124 4016843 <br>
+				Mob:- 08750495050 <br>
+				Email:- Contact@isgindia.co.in
+         	</div>
+         	</div>
+         	<div class="jumbotron col-md-6" style="height: 500px">
+         		    	
+         		   <div style='overflow:hidden;height:400px;width:500px;'>
+         		    	  <div id='gmap_canvas' style='height:400px;width:500px;'></div>
+         		    	  <div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div>
+         		    	  <style> 
+         		    	  </style></div> 	 
+
+         		    	  
+         	   
+         	</div>
+         	</div>
+
+
+         </div>
+        </div>
+      </body>
+     </html> 
